@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import  { Suspense } from 'react';
 import Loaders from './combonents/Loaders';
 import User from './combonents/Users';
 
