@@ -79,7 +79,7 @@ const PostUsers: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">📋 User List</h1>
+      <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">User List</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {users.map(user => (
@@ -90,14 +90,14 @@ const PostUsers: React.FC = () => {
             <h2 className="text-xl font-semibold text-gray-800 mb-1">
               {user.name} <span className="text-gray-500 text-sm">({user.username})</span>
             </h2>
-            <p className="text-sm text-gray-600 mb-1">✉️ {user.email}</p>
-            <p className="text-sm text-gray-600 mb-1">📞 {user.phone}</p>
+            <p className="text-sm text-gray-600 mb-1">Email: {user.email}</p>
+            <p className="text-sm text-gray-600 mb-1">Telephone: {user.phone}</p>
             <p className="text-sm text-gray-600 mb-3">
-              🌐 <a href={`http://${user.website}`} className="text-blue-500 hover:underline" target="_blank" rel="noreferrer">{user.website}</a>
+              Website <a href={`http://${user.website}`} className="text-blue-500 hover:underline" target="_blank" rel="noreferrer">{user.website}</a>
             </p>
 
             <div className="mb-3">
-              <h3 className="text-sm font-semibold text-gray-800">🏠 Address</h3>
+              <h3 className="text-sm font-semibold text-gray-800"> Address</h3>
               <p className="text-sm text-gray-600">
                 {user.address.street}, {user.address.suite}, {user.address.city}
               </p>
@@ -106,7 +106,7 @@ const PostUsers: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold text-gray-800">🏢 Company</h3>
+              <h3 className="text-sm font-semibold text-gray-800"> Company</h3>
               <p className="text-sm text-gray-600">{user.company.name}</p>
               <p className="text-sm italic text-gray-500">"{user.company.catchPhrase}"</p>
               <p className="text-sm text-gray-600">{user.company.bs}</p>

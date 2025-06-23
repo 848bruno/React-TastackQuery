@@ -22,7 +22,7 @@ const Albums: React.FC<AlbumsProps> = ({ albums }) => {
 
   return (
     <div className="mt-4 border-t pt-4">
-      <h3 className="text-md font-bold text-gray-800 mb-2">📀 Albums</h3>
+      <h3 className="text-md font-bold text-gray-800 mb-2">Albums</h3>
       <ul className="space-y-1">
         {albums.map((album) => (
           <li key={album.id} className="text-sm text-gray-700">
